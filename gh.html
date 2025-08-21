@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Nursat</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to bottom, #87cefa, #1e90ff);
+
+      overflow: hidden;
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-top: 40px;
+      text-shadow: 2px 2px #0c3c63;
+    }
+    .waves {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 200px;
+      background: url('https://i.ibb.co/qM2b8sM/wave.png');
+      background-size: 1000px 200px;
+      animation: wave 6s linear infinite;
+    }
+    @keyframes wave {
+      0% {background-position-x: 0;}
+      100% {background-position-x: 1000px;}
+    }
+    .fish {
+      position: absolute;
+      width: 80px;
+      animation: swim 12s linear infinite;
+    }
+    @keyframes swim {
+      0% {left: -100px; top: 40%;}
+      50% {top: 50%;}
+      100% {left: 110%; top: 45%;}
+    }
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 60px;
+      animation: floatUp 10s linear infinite;
+    }
+    @keyframes floatUp {
+      0% {bottom: -150px;}
+      100% {bottom: 110%;}
+    }
+    .button {
+      margin-top: 30px;
+      padding: 15px 25px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 25px;
+      background: #ff69b4;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .button:hover {
+      transform: scale(1.1);
+      background: #ff85c1;
+    }
+    .message {
+      display: none;
+      margin-top: 30px;
+      font-size: 1.5rem;
+      background: rgba(255,255,255,0.2);
+      padding: 20px;
+      border-radius: 15px;
+      animation: fadeIn 2s;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <h1>🌊 Happy Birthday, Nursat! 🐠</h1>
+  <button class="button" onclick="showMessage()">Click me 💖</button>
+  <div class="message" id="message">
+    My sweet Nursat, you are the pearl of my ocean. 🐚💙<br>
+    Wishing you endless happiness, love, and magical moments today & always.Looking forward to all the future Rickshaw dates Dear. 🎂✨
+  </div>
+
+  <img src="https://i.ibb.co/SKZpZVh/fish.png" class="fish" style="top:60%; animation-delay: 0s;">
+  <img src="https://i.ibb.co/SKZpZVh/fish.png" class="fish" style="top:40%; animation-delay: 6s;">
+
+  <img src="https://i.ibb.co/fp3vG7N/balloon.png" class="balloon" style="left:10%; animation-delay: 0s;">
+  <img src="https://i.ibb.co/fp3vG7N/balloon.png" class="balloon" style="left:50%; animation-delay: 3s;">
+  <img src="https://i.ibb.co/fp3vG7N/balloon.png" class="balloon" style="left:80%; animation-delay: 6s;">
+
+  <div class="waves"></div>
+
+  <script>
+    function showMessage(){
+      document.getElementById('message').style.display = 'block';
+
+    }
+  </script>
+</body>
+</html>
